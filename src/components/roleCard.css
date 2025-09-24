@@ -1,0 +1,14 @@
+.role-card {
+  border: 2px solid grey;
+  border-radius: 10px;
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  padding: 10px;
+}
+
+.role-card p{
+  margin: 0;
+  font-weight: 700;
+}
