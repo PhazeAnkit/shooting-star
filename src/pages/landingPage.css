@@ -1,0 +1,46 @@
+.landing {
+  min-height: 100vh;       
+  display: flex;             
+  flex-direction: column;    
+  justify-content: center;   
+  align-items: center;       
+  text-align: center;
+  padding: 2rem;
+  border: 1px solid red;    
+  box-sizing: border-box;    
+}
+
+.landing header {
+  max-width: 700px;          
+  margin-bottom: 2rem;
+}
+
+.logo-shape {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.role-section {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin: 2rem 0;
+  flex-wrap: wrap;           
+}
+
+.continue-btn {
+  padding: 12px 24px;
+  border: none;
+  background: linear-gradient(90deg, #6E62E5, #4F29CC);
+  color: white;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.continue-btn:hover {
+  opacity: 0.9;
+}
