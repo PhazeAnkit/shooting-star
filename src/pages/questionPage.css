@@ -1,0 +1,140 @@
+.page-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.question-page {
+  min-width: 700px;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+}
+
+.question-header {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
+.timer {
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  gap: 0.1rem;
+  color: #4f29cc;
+}
+
+.timer.urgent {
+  color: red;
+}
+
+.timer-logo {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+}
+
+.question-body {
+  border: 1px solid #6e62e5;
+  border-radius: 10px;
+}
+
+.question {
+  margin-bottom: 1rem;
+  color: white;
+  display: flex;
+  min-height: 40px;
+  align-items: stretch;
+  background: linear-gradient(90deg, #373737, #6e6e6e);
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  padding-left: 10px;
+}
+
+.options {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.option {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.option:hover {
+  background: #f9f9f9;
+}
+
+.option.selected {
+  border: 2px solid var(--purple-dark, #6b21a8);
+  background: #f3e8ff;
+}
+
+.option.selected span {
+  font-weight: bold;
+}
+
+.submit-btn:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+}
+
+.result-bar {
+  margin-top: 5px;
+  background: #eee;
+  border-radius: 6px;
+  position: relative;
+  height: 20px;
+}
+
+.bar-fill {
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    var(--purple-mid, #9333ea),
+    var(--purple-dark, #6b21a8)
+  );
+  border-radius: 6px 0 0 6px;
+}
+
+.vote-count {
+  font-size: 12px;
+  margin-left: 5px;
+  position: absolute;
+  right: 5px;
+  top: 2px;
+}
+
+.question-footer {
+  margin-top: 20px;
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+}
+
+.end-btn {
+  padding: 10px 20px;
+  border: 1px solid grey;
+  border-radius: 20px;
+  background: white;
+  cursor: pointer;
+}
+
+.next-btn {
+  padding: 10px 20px;
+  border: 1px solid grey;
+  background: linear-gradient(90deg, var(--purple-mid), var(--purple-dark));
+  color: black;
+  border-radius: 20px;
+  cursor: pointer;
+}
